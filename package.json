@@ -1,0 +1,17 @@
+{
+  "name": "electronic-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fenq2/electronic-shop.git",
+  "author": "fenq2 <fenq@urk.net>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "concurrently \"cd ./frontend && yarn install\" \"cd ./backend && yarn install\"",
+    "server": "cd backend && yarn dev",
+    "client": "cd frontend && yarn dev",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
