@@ -1,0 +1,15 @@
+.navItem {
+  padding: 0 16px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.navLink {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -10,6 +10,7 @@ import {
   Row,
 } from 'react-bootstrap';
 
+import Categories from '../Navigation/Categories/Categories';
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
@@ -51,28 +52,7 @@ const Header: React.FC = () => {
         </Row>
         <Row className="align-items-center">
           <Col className="d-flex">
-            <Nav>
-              <Nav.Item className={styles.navItem}>
-                <Link href="/">
-                  <a className={styles.navLink}>Видяхи</a>
-                </Link>
-              </Nav.Item>
-              <Nav.Item className={styles.navItem}>
-                <Link href="/">
-                  <a className={styles.navLink}>Процы</a>
-                </Link>
-              </Nav.Item>
-              <Nav.Item className={styles.navItem}>
-                <Link href="/">
-                  <a className={styles.navLink}>Мать</a>
-                </Link>
-              </Nav.Item>
-              <Nav.Item className={styles.navItem}>
-                <Link href="/">
-                  <a className={styles.navLink}>Жопа</a>
-                </Link>
-              </Nav.Item>
-            </Nav>
+            <Categories />
           </Col>
         </Row>
       </Container>
